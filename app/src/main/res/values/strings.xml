@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">KotlinExampleProject</string>
+    <string name="launch_form">Lanzar formulario</string>
+    <string name="launch_dialog">Lanzar dialog</string>
+    <string name="launch_recycler">Lanzar RecyclerView</string>
+    <string name="launch_toast">Lanzar toast</string>
+</resources>
