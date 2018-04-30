@@ -4,4 +4,13 @@
     <string name="launch_dialog">Lanzar dialog</string>
     <string name="launch_recycler">Lanzar RecyclerView</string>
     <string name="launch_toast">Lanzar toast</string>
+    <string name="complete_name">Nombre completo</string>
+    <string name="age">Edad</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="error_fill_name">Rellena el campo nombre</string>
+    <string name="error_fill_age">Rellena el campo edad</string>
+    <string name="adult">adulto</string>
+    <string name="hi_">"Hola "</string>
+    <string name="you_are_">" tu eres "</string>
+    <string name="child">niño</string>
 </resources>
