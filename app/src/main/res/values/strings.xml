@@ -13,4 +13,7 @@
     <string name="hi_">"Hola "</string>
     <string name="you_are_">" tu eres "</string>
     <string name="child">niño</string>
+    <string name="toas_anko">Éste es un Toast de ANKO</string>
+    <string name="hi_custom_dialog_anko">Hola soy un Custom Dialog de ANKO</string>
+    <string name="add">Agregar</string>
 </resources>

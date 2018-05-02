@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_form.*
+import org.jetbrains.anko.toast
 
 class FormActivity : AppCompatActivity() {
 
@@ -24,12 +25,12 @@ class FormActivity : AppCompatActivity() {
         var age = age_et.getText().toString()
 
         if(name.isEmpty()){
-            showMessage(R.string.error_fill_name)
+            toast(R.string.error_fill_name)
            return;
         }
 
         if(age_et.getText().isEmpty()){
-            showMessage(R.string.error_fill_age)
+            toast(R.string.error_fill_age)
             return
         }
 
@@ -43,16 +44,8 @@ class FormActivity : AppCompatActivity() {
             stringBuilder.append(getString(R.string.child))
         }
 
-        showMessage(stringBuilder.toString())
+        toast(stringBuilder.toString())
         finish()
-    }
-
-    fun showMessage(msg:Int){
-        Toast.makeText(this, msg, Toast.LENGTH_LONG).show()
-    }
-
-    fun showMessage(msg:String){
-        Toast.makeText(this, msg, Toast.LENGTH_LONG).show()
     }
 
     companion object {

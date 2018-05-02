@@ -4,6 +4,10 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import kotlinx.android.synthetic.main.activity_main.*
+import org.jetbrains.anko.alert
+import org.jetbrains.anko.intentFor
+import org.jetbrains.anko.singleTop
+import org.jetbrains.anko.toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,15 +30,20 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun launchDialog(){
-
+        alert {
+            customView(
+                    layoutInflater.inflate(R.layout.custom_dialog_anko, null)
+            )
+            yesButton { dismiss() }
+        }.show()
     }
 
     fun launchRecycler(){
-
+        startActivity(intentFor<RecyclerViewActivity>().singleTop())
     }
 
     fun launchToast(){
-
+        toast(R.string.toas_anko)
     }
 
 }
